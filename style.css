@@ -1,0 +1,143 @@
+/* === Configuración General === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0044cc, #001a66);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Contenedor del Login === */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  height: 900px; /* dimensión solicitada */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+/* === Caja blanca central === */
+.login-box {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+}
+
+/* === Sección del logo === */
+.logo-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.logo-section h1 {
+  color: #0044cc;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+/* === Formulario === */
+form h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+label {
+  text-align: left;
+  display: block;
+  color: #444;
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0044cc;
+}
+
+/* === Opciones debajo === */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin: 15px 0 25px;
+}
+
+.options a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* === Botón === */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #002f80;
+}
+
+/* === Footer === */
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* === Responsividad === */
+@media (max-width: 400px) {
+  .login-box {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .logo-section h1 {
+    font-size: 22px;
+  }
+}
