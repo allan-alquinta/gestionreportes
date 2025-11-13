@@ -7,7 +7,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   if (email === "admin@biokelp.com" && password === "12345") {
     alert("Inicio de sesión exitoso");
     // Aquí podrías redirigir al dashboard:
-    window.location.href = "dashboard.html";
+    window.location.href = "../dashboard/dashboard.html";
   } else {
     alert("Credenciales inválidas");
   }

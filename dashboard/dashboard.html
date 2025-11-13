@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | BioKelp</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <h1>Dashboard</h1>
+    <button onclick="logout()">Cerrar sesión</button>
+  </header>
+
+  <main class="container">
+    <div class="cards">
+      <div class="card blue">
+        <h3>Producción Total</h3>
+        <p class="value">1.960 kg</p>
+        <span>Última actualización: hoy</span>
+      </div>
+
+      <div class="card green">
+        <h3>Capacidad Utilizada</h3>
+        <p class="value">82%</p>
+        <span>Meta mensual</span>
+      </div>
+
+      <div class="card purple">
+        <h3>Registros Activos</h3>
+        <p class="value">156</p>
+        <span>Datos totales</span>
+      </div>
+    </div>
+
+    <section class="charts">
+      <div class="chart-container">
+        <h3>Producción Semanal</h3>
+        <canvas id="chartSemanal"></canvas>
+      </div>
+
+      <div class="chart-container">
+        <h3>Por Tipo de Alga</h3>
+        <canvas id="chartTipo"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

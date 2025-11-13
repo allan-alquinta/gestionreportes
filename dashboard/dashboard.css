@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  color: #333;
+}
+
+.topbar {
+  background: #0044cc;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar button {
+  background: white;
+  color: #0044cc;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Tarjetas */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blue { background: #005cff; }
+.green { background: #00a65a; }
+.purple { background: #6a1b9a; }
+
+.card h3 {
+  font-size: 16px;
+}
+
+.card .value {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card span {
+  font-size: 12px;
+}
+
+/* Gráficos */
+.charts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive 400x900 */
+@media (max-width: 400px) {
+  .cards {
+    flex-direction: column;
+  }
+}
