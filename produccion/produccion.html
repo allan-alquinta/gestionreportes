@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Producción | BioKelp</title>
+  <link rel="stylesheet" href="produccion.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Producción</h1>
+    <a href="../dashboard/dashboard.html" class="volver-btn">← Volver</a>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Registrar Producción</h2>
+      <form id="produccionForm">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" required>
+
+        <label for="tipo">Tipo de Alga</label>
+        <select id="tipo" required>
+          <option value="">Seleccionar...</option>
+          <option value="Gracilaria">Gracilaria</option>
+          <option value="Ulva">Ulva</option>
+          <option value="Porphyra">Porphyra</option>
+        </select>
+
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" placeholder="Ej: 120" required>
+
+        <label for="destino">Mercado Destino</label>
+        <input type="text" id="destino" placeholder="Ej: Japón" required>
+
+        <button type="submit">Agregar Registro</button>
+      </form>
+    </section>
+
+    <section class="tabla-section">
+      <h2>Registros de Producción</h2>
+      <table id="tablaProduccion">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Tipo</th>
+            <th>Peso (kg)</th>
+            <th>Destino</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filas generadas dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="graficos">
+      <h2>Resumen Visual</h2>
+      <canvas id="graficoBarras"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 BioKelp | Sistema de Gestión</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="produccion.js"></script>
+</body>
+</html>

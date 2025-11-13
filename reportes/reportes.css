@@ -96,3 +96,19 @@ ul li span { color: #0044cc; font-weight: 500; }
 @media (max-width: 400px) {
   .form-section, .lista { padding: 15px; }
 }
+
+.btn-ir {
+  display: block;
+  text-align: center;
+  background: #0044cc;
+  color: white;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-ir:hover {
+  background: #002f80;
+}
