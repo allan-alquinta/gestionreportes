@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reportes | BioKelp</title>
+  <link rel="stylesheet" href="reportes.css" />
+  <script src="reportes.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <h1>Reportes</h1>
+    <button onclick="volverDashboard()">← Volver</button>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Configurar Reporte</h2>
+
+      <label>Tipo de Reporte</label>
+      <select id="tipoReporte">
+        <option>Reporte Semanal</option>
+        <option>Reporte Mensual</option>
+        <option>Análisis General</option>
+      </select>
+
+      <label>Período</label>
+      <div class="periodo">
+        <input type="date" id="inicio" /> – 
+        <input type="date" id="fin" />
+      </div>
+
+      <label>Mercado Destino</label>
+      <select id="mercado">
+        <option>Chile</option>
+        <option>Japón</option>
+        <option>España</option>
+      </select>
+
+      <label>Formato</label>
+      <div class="formatos">
+        <input type="radio" name="formato" value="PDF" checked /> PDF
+        <input type="radio" name="formato" value="Excel" /> Excel
+        <input type="radio" name="formato" value="CSV" /> CSV
+      </div>
+
+      <button id="generarBtn">Generar Reporte</button>
+    </section>
+
+    <section class="lista">
+      <h2>Reportes Recientes</h2>
+      <ul id="listaReportes"></ul>
+    </section>
+  </main>
+</body>
+</html>

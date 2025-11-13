@@ -89,3 +89,16 @@ body {
     flex-direction: column;
   }
 }
+
+.reportes-btn {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  background: #0044cc;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.reportes-btn:hover { background: #002f80; }
